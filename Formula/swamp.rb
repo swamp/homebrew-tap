@@ -1,16 +1,16 @@
 class Swamp < Formula
   desc "Swamp (Unsigned)"
   homepage "https://github.com/swamp/swamp"
-  version "0.1.17-alpha.14"
+  version "0.1.17-alpha.15"
 
 	on_arm do
     url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-darwin-arm64.tar.gz"
-    sha256 "396b900e074737e713938e55faa55e35ea9a0916330e788d1388354c32686540"
+    sha256 "7526a09919ad8f7c8b0703afb3345320ec0ea92b8c81438bbfc45909635802ab"
   end
 
   on_intel do
     url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-darwin-x86_64.tar.gz"
-    sha256 "4d2ba01e3ea8dc21955f0fa0596c778f6fb18d055bc7e810dc3678ca6a2af9c7"
+    sha256 "94debafe3fed555e65ed82a8978068b84c0c17e882abfcc252f60c5c97b239be"
   end
 
   def install
