@@ -1,17 +1,17 @@
 class Swampd < Formula
   desc "Swampd (Unsigned)"
   homepage "https://github.com/swamp/swampd"
-  version "0.0.5"
+  version "0.0.7"
 
 	on_macos do
 		on_arm do
 			url "https://github.com/swamp/swampd/releases/download/v#{version}/swampd-darwin-arm64.tar.gz"
-			sha256 "39ba4052bb0988f7aa350746998b6d2981dc4c01d4d7ae48eb424ded3000c3c9"
+			sha256 "07761ba7a2b745c694ddf22df5a01201e3bdca87b8bdaf7272f1664de3732bbd"
 		end
 
 		on_intel do
 			url "https://github.com/swamp/swampd/releases/download/v#{version}/swampd-darwin-x86_64.tar.gz"
-			sha256 "70c25b0fa05de51f4d71b6c3f3197265e3251b0a94f3981b1ec788441d5e8a72"
+			sha256 "5082badf4edb3065cf079882aa6a566918227034a74a1c9059447cd5fc81256f"
 		end
 	end
 
