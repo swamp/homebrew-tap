@@ -23,11 +23,11 @@ class SwampBeta < Formula
     # version is not part of the executable inside the .tar.gz
     binary_name = "swamp-macos-#{os_arch}"
 
-    bin.install binary_name => "swamp"
+    bin.install binary_name => "swamp-beta"
   end
 
   test do
     # verify the version of the binary
-    assert_match "Swamp v#{version}", shell_output("#{bin}/swamp help")
+    assert_match "Swamp v#{version}", shell_output("#{bin}/swamp-beta help")
   end
 end
