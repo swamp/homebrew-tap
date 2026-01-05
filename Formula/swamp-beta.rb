@@ -21,7 +21,7 @@ class SwampBeta < Formula
     os_arch = Hardware::CPU.arm? ? "arm64" : "x86_64"
 
     # version is not part of the executable inside the .tar.gz
-    binary_name = "swamp-macos_#{os_arch}"
+    binary_name = "swamp-macos-#{os_arch}"
 
     bin.install binary_name => "swamp"
   end
