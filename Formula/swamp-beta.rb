@@ -7,12 +7,12 @@ class SwampBeta < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos_arm64.tar.gz"
+      url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos-arm64.tar.gz"
       sha256 "940a93dcc279880680e446f4279c52b2214845f12d7afaddecb6bf1b2d702c79"
     end
 
     on_intel do
-      url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos_x86_64.tar.gz"
+      url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos-x86_64.tar.gz"
       sha256 "48826aca30bdeb65c0404d567c4a094ea5599116f7111c2b5c2fc29059e76e9f"
     end
   end
