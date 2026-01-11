@@ -3,25 +3,34 @@ class SwampBeta < Formula
   homepage "https://github.com/swamp/swamp"
   license "MIT"
 
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
       url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos-arm64.tar.gz"
-      sha256 "940a93dcc279880680e446f4279c52b2214845f12d7afaddecb6bf1b2d702c79"
+      sha256 "ca1440043dff83c9f1e2e8e259ab41a74cfc8c2b51402246d34233d553da0f87"
     end
 
     on_intel do
       url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos-x86_64.tar.gz"
-      sha256 "48826aca30bdeb65c0404d567c4a094ea5599116f7111c2b5c2fc29059e76e9f"
+      sha256 "8b7382ec15eeec6ad09282ace8e06d5931ce09c78f4f7c3ee138ea815dcf8a03"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-linux-x86_64.tar.gz"
+      sha256 "20a48ee68ce1a3340d15f3761983aad5583f271250f47430cd787abf293d8509"
     end
   end
 
   def install
-    os_arch = Hardware::CPU.arm? ? "arm64" : "x86_64"
+    os = OS.mac? ? "macos" : "linux"
+
+    arch = Hardware::CPU.arm? ? (OS.mac? ? "arm64" : "aarch64") : "x86_64"
 
     # version is not part of the executable inside the .tar.gz
-    binary_name = "swamp-macos-#{os_arch}"
+    binary_name = "swamp-#{os}-#{os_arch}"
 
     bin.install binary_name => "swamp-beta"
   end
