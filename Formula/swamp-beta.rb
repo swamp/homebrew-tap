@@ -3,29 +3,29 @@ class SwampBeta < Formula
   homepage "https://github.com/swamp/swamp"
   license "MIT"
 
-  version "0.3.7"
+  version "0.3.8"
 
   on_linux do
     on_arm do
       url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-linux-aarch64.tar.gz"
-      sha256 "54c94d544df65ace4888009f54543726212a7f929d6561547d128f0012189447"
+      sha256 "753755b2a94aa7a022c677f0bf81fa08c6991a6cd6610181841751a82874326c"
     end
 
     on_intel do
       url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-linux-x86_64.tar.gz"
-      sha256 "3cc399e138559b91d3246fbc6b316dd8ccc932142e1988d4d1c53f068668f9a3"
+      sha256 "46040112e26a32a0919d911cf5db9f617ded89174c4c2c53512aa3ad1d4cef0b"
     end
   end
 
   on_macos do
     on_arm do
       url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos-arm64.tar.gz"
-      sha256 "31c13bc1747f993157682e35155ed61be6513a987b3ca8a8581e55f037f13669"
+      sha256 "fa6d44280e9cf9e4ae89a9c1c154d8ffc525319b360da76fa8ad8baa9919e153"
     end
 
     on_intel do
       url "https://github.com/swamp/swamp/releases/download/v#{version}/swamp-#{version}-macos-x86_64.tar.gz"
-      sha256 "969f104f15f9131da2d831ca545f76799aa3f69bd1a112e60e797ad1b1a9e9e5"
+      sha256 "1cb4821916d6c2474fe4904f447f6478c90501f21f189cd6fe12485d4ebd3fad"
     end
   end
 
