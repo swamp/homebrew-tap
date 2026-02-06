@@ -2,24 +2,29 @@ class Bogd < Formula
   desc "Bogd server"
   homepage "https://github.com/bogd-32/bogd"
 
-  version "0.0.2"
+  version "0.0.3"
 
   on_linux do
+    on_arm do
+      url "https://bogd.net/download/bogd-#{version}-linux-aarch64.tar.gz"
+      sha256 "61afe1084a150415cab5f4f3894d4648e7d2b5c11852d097cb55c7e2bd43dd8b"
+    end
+
     on_intel do
       url "https://bogd.net/download/bogd-#{version}-linux-x86_64.tar.gz"
-      sha256 "3f8e9c014659c87f741bfa3b1fb5f6dc9cbffbeecbba4809946d8c68dc39be6c"
+      sha256 "30239a5f39947f7bd149aa21bef5f85fe38840da50b08e8100ef3004ab272ad6"
     end
   end
 
   on_macos do
     on_arm do
       url "https://bogd.net/download/bogd-#{version}-macos-arm64.tar.gz"
-      sha256 "b32d6cb26363e815a50d298ca8a223d653c800c704dac3c51ab5f5a7b45b23da"
+      sha256 "04d4edac770a9a2d4607326c1a7a83e8ffc72b2bae1684432a79f327079b4784"
     end
 
     on_intel do
       url "https://bogd.net/download/bogd-#{version}-macos-x86_64.tar.gz"
-      sha256 "b8182f3952cefecc52d4aa59e33742e97f29c52abb2bd818b055ab557a63bd96"
+      sha256 "57d4a4aece50886aa7023a68098d1e587dbf3205cf17a967fc1a98e186ac650a"
     end
   end
 
